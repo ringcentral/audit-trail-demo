@@ -3,7 +3,7 @@
  * when target event happens, do some logging in aws
  */
 
-const { Log } = require('../src/helper/log')
+const { Log } = require('./src/helper/log')
 
 exports.description = 'After login, server will fetch recent user action history every {interval} minutes and log to AWS DynamoDB'
 
