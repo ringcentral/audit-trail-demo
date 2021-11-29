@@ -1,0 +1,96 @@
+{
+  "name": "audit-trail-api-demo",
+  "version": "1.0.0",
+  "description": "A demo app tracking RingCentral account change with audit trail api",
+  "keywords": [
+    "RingCentral",
+    "audit trail",
+    "demo",
+    "api"
+  ],
+  "scripts": {
+    "start": "node -r @babel/register -r dotenv/config ./src/server/run-server.js",
+    "fix": "standard --fix",
+    "c": "webpack serve --config build/webpack.config.js",
+    "lint": "standard"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "*-compiled.js",
+      "/dist/"
+    ]
+  },
+  "devDependencies": {
+    "@ant-design/icons": "4.7.0",
+    "@babel/core": "7.15.8",
+    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/plugin-proposal-decorators": "7.15.8",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.15.8",
+    "@babel/preset-env": "7.15.8",
+    "@babel/preset-react": "7.14.5",
+    "@babel/register": "7.15.3",
+    "@babel/runtime": "7.15.4",
+    "@electerm/antd-dayjs-webpack-plugin": "1.0.7",
+    "@electerm/pug-html-loader": "^1.1.6",
+    "antd": "4.16.13",
+    "apply-loader": "2.0.0",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "babel-plugin-import": "1.13.3",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "classnames": "2.3.1",
+    "concat-loader": "0.1.0",
+    "css-loader": "5.2.6",
+    "css-minimizer-webpack-plugin": "3.0.2",
+    "dayjs": "^1.10.5",
+    "dotenv": "10.0.0",
+    "extract-loader": "5.1.0",
+    "file-loader": "6.2.0",
+    "html-loader": "2.1.2",
+    "less": "^4.1.2",
+    "less-loader": "10.0.1",
+    "mini-css-extract-plugin": "2.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "shelljs": "0.8.4",
+    "snazzy": "9.0.0",
+    "standard": "^16.0.4",
+    "style-loader": "3.0.0",
+    "stylus": "0.54.8",
+    "stylus-loader": "6.1.0",
+    "url-loader": "4.1.1",
+    "webpack": "5.59.1",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.3.1"
+  },
+  "dependencies": {
+    "@ringcentral/sdk": "^4.6.1",
+    "axios": "^0.21.2",
+    "cookie-parser": "^1.4.6",
+    "cron": "^1.8.2",
+    "dynamo-sequelize": "^0.8.2",
+    "express": "4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "express-jwt": "^6.1.0",
+    "json-deep-copy": "1.1.6",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "4.17.21",
+    "morgan": "^1.10.0",
+    "nanoid": "3.1.23",
+    "sequelize": "^6.12.0-alpha.1"
+  },
+  "author": "Drake Zhao <drake.zhao@ringcentral.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringcentral/audit-trail-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ringcentral/audit-trail-demo/issues"
+  },
+  "homepage": "https://github.com/ringcentral/audit-trail-demo#readme"
+}
