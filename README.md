@@ -12,7 +12,7 @@ todo
 
 - First, need create a AWS account, we will use free AWS dynamodb, and put your aws credentials in ~/.aws/credentials, check [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
-- Go to [RingCentral Developer Portal](https://developers.ringcentral.com/) and [create a rest api app, web based](https://developers.ringcentral.com/guide/basics/create-app) with permissions: `ReadAccount`, `ReadAuditTrail`, set `http://localhost:6066/rc-oauth` as `Callback url`, you may not have the `ReadAuditTrail`, please contact RingCentral to request it.
+- Go to [RingCentral Developer Portal](https://developers.ringcentral.com/) and [create a rest api app, web based](https://developers.ringcentral.com/guide/basics/create-app) with permissions: `ReadAccount`, `ReadAuditTrail`, set `http://localhost:6066/rc-oauth` as `Callback url`, if do not have the `ReadAuditTrail` permission, please contact RingCentral to request it.
 
 ### Run
 
@@ -46,7 +46,7 @@ cp config-examples/config-aws.js ./config.js
 npm start
 ```
 
-## log to splunk events
+## Log to splunk events
 
 Edit `.env`, add `SPLUNK_TOKEN`
 
