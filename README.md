@@ -1,6 +1,6 @@
-# RingCentral audit trail app demo
+# RingCentral Audit Trail App Demo
 
-A demo app tracking RingCentral account change with audit trail api
+A demo app tracking RingCentral account change with audit trail API.
 
 ## Video
 
@@ -32,7 +32,6 @@ npm start
 
 # start client server in another terminal
 npm run c
-
 ```
 
 Then visit [http://localhost:6066](http://localhost:6066), and login with your account. After login, server will fetch recent user action history every a few minutes and log to console
@@ -46,7 +45,7 @@ cp config-examples/config-aws.js ./config.js
 npm start
 ```
 
-## Log to splunk events
+## Log to Splunk events
 
 Edit `.env`, add `SPLUNK_TOKEN`
 
